@@ -51,14 +51,17 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZXF_Bolg">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;index.html">
+  <meta name="description" content="2.数据集 2.1数据集的概念数据构成的矩形数组行表示：观测；列表示：变量  2.2数据类型标量、向量、矩阵、数组、数据框和列表。  2.2.1 向量向量是c()用于存储：数字型、字符型、逻辑型数据的一维数组。 创建向量 – a &amp;lt;- c( ) 创建标量 – a &amp;lt;- 常量 单个向量中的数据类型必须一致！！ 访问向量中单个元素: a[ ]; 访问向量中多个元素:a[c( )]; 访问向">
+<meta property="og:type" content="article">
+<meta property="og:title" content="R语言--第二章知识点">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;R-2&#x2F;index.html">
 <meta property="og:site_name" content="ZXF_Bolg">
+<meta property="og:description" content="2.数据集 2.1数据集的概念数据构成的矩形数组行表示：观测；列表示：变量  2.2数据类型标量、向量、矩阵、数组、数据框和列表。  2.2.1 向量向量是c()用于存储：数字型、字符型、逻辑型数据的一维数组。 创建向量 – a &amp;lt;- c( ) 创建标量 – a &amp;lt;- 常量 单个向量中的数据类型必须一致！！ 访问向量中单个元素: a[ ]; 访问向量中多个元素:a[c( )]; 访问向">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-08T09:52:57.283Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/">
+<link rel="canonical" href="http://yoursite.com/2019/11/08/R-2/">
 
 
 <script id="page-configurations">
@@ -66,13 +69,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | ZXF_Bolg</title>
+  <title>R语言--第二章知识点 | ZXF_Bolg</title>
   
 
 
@@ -166,69 +169,100 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/08/R-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zhang xuefeng">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZXF_Bolg">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          R语言--第二章知识点
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-11-08 17:51:42 / Modified: 17:52:57" itemprop="dateCreated datePublished" datetime="2019-11-08T17:51:42+08:00">2019-11-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-08T17:51:42+08:00"
-              content="2019-11-08">
-          11-08
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/08/R-2/" itemprop="url">
-            <span itemprop="name">R语言--第二章知识点</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-07T14:57:58+08:00"
-              content="2019-11-07">
-          11-07
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/07/Markdown-syntax/" itemprop="url">
-            <span itemprop="name">Markdown syntax</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
+        <h1 id="2-数据集"><a href="#2-数据集" class="headerlink" title="2.数据集"></a><strong>2.数据集</strong></h1><hr>
+<h2 id="2-1数据集的概念"><a href="#2-1数据集的概念" class="headerlink" title="2.1数据集的概念"></a>2.1数据集的概念</h2><p><em>数据构成的矩形数组</em><br><em>行表示：观测；列表示：变量</em></p>
+<hr>
+<h2 id="2-2数据类型"><a href="#2-2数据类型" class="headerlink" title="2.2数据类型"></a>2.2数据类型</h2><p>标量、向量、矩阵、数组、数据框和列表。</p>
+<hr>
+<h3 id="2-2-1-向量"><a href="#2-2-1-向量" class="headerlink" title="2.2.1 向量"></a>2.2.1 向量</h3><p>向量是c()用于存储：<strong>数字型、字符型、逻辑型</strong>数据的一维数组。</p>
+<p><strong>创建向量 – a &lt;- c( )</strong></p>
+<p><strong>创建标量 – a &lt;- 常量</strong></p>
+<p><strong><em>单个向量中的数据类型必须一致！！</em></strong></p>
+<p>访问向量中单个元素: a[ ];</p>
+<p>访问向量中多个元素:a[c( )];</p>
+<p>访问向量中从xx到xx的元素:a[ : ]</p>
+<hr>
+<h3 id="2-2-2矩阵"><a href="#2-2-2矩阵" class="headerlink" title="2.2.2矩阵"></a>2.2.2矩阵</h3><p>矩阵元素具有相同模式的二维数组</p>
+<p><strong>创建矩阵 – y &lt;-matrix(vector,  nrow = , ncol = , byrow =  , dimnames = list( , ) )</strong></p>
+<p>vector代表存储元素的对象，nrow代表行数量，ncol代表列数量。</p>
+<p><em>默认情况下byrow = FALSE(默认按列填充)，byrow = TRUE时矩阵元素按行填充。</em></p>
+<p><em>dimnames用来给行和列的名称赋值（一般是字符型）。</em></p>
+<hr>
+<h3 id="2-2-3数组"><a href="#2-2-3数组" class="headerlink" title="2.2.3数组"></a>2.2.3数组</h3><p><strong><em>维度可以大于2</em></strong></p>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/07/Markdown-syntax/" rel="next" title="Markdown syntax">
+                  <i class="fa fa-chevron-left"></i> Markdown syntax
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -257,6 +291,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2-数据集"><span class="nav-number">1.</span> <span class="nav-text">2.数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1数据集的概念"><span class="nav-number">1.1.</span> <span class="nav-text">2.1数据集的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2数据类型"><span class="nav-number">1.2.</span> <span class="nav-text">2.2数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-向量"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.2.1 向量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2矩阵"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2.2矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3数组"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.2.3数组</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
