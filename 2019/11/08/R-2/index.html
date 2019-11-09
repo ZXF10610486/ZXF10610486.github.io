@@ -51,14 +51,14 @@
   };
 </script>
 
-  <meta name="description" content="2.数据集2.1数据集的概念数据构成的矩形数组行表示：观测；列表示：变量2.2数据类型标量、向量、矩阵、数组、数据框和列表。">
+  <meta name="description" content="2. 数据集2.1 数据集的概念数据构成的矩形数组 行表示：观测；列表示：变量 2.2 数据类型标量、向量、矩阵、数组、数据框和列表。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="R语言--第二章知识点">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;R-2&#x2F;index.html">
 <meta property="og:site_name" content="ZXF_Bolg">
-<meta property="og:description" content="2.数据集2.1数据集的概念数据构成的矩形数组行表示：观测；列表示：变量2.2数据类型标量、向量、矩阵、数组、数据框和列表。">
+<meta property="og:description" content="2. 数据集2.1 数据集的概念数据构成的矩形数组 行表示：观测；列表示：变量 2.2 数据类型标量、向量、矩阵、数组、数据框和列表。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-09T02:11:41.954Z">
+<meta property="og:updated_time" content="2019-11-09T02:35:23.867Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/08/R-2/">
@@ -204,7 +204,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-09 10:11:41" itemprop="dateModified" datetime="2019-11-09T10:11:41+08:00">2019-11-09</time>
+                <time title="Modified: 2019-11-09 10:35:23" itemprop="dateModified" datetime="2019-11-09T10:35:23+08:00">2019-11-09</time>
               </span>
 
           
@@ -218,28 +218,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="2-数据集"><a href="#2-数据集" class="headerlink" title="2.数据集"></a><strong>2.数据集</strong></h1><hr><h2 id="2-1数据集的概念"><a href="#2-1数据集的概念" class="headerlink" title="2.1数据集的概念"></a>2.1数据集的概念</h2><p><em>数据构成的矩形数组</em><br><em>行表示：观测；列表示：变量</em></p><hr><h2 id="2-2数据类型"><a href="#2-2数据类型" class="headerlink" title="2.2数据类型"></a>2.2数据类型</h2><p>标量、向量、矩阵、数组、数据框和列表。</p><a id="more"></a>
+        <h1 id="2-数据集"><a href="#2-数据集" class="headerlink" title="2. 数据集"></a><strong>2. 数据集</strong></h1><hr><h2 id="2-1-数据集的概念"><a href="#2-1-数据集的概念" class="headerlink" title="2.1 数据集的概念"></a>2.1 数据集的概念</h2><p>数据构成的矩形数组</p><ul>
+<li>行表示：观测；列表示：变量</li>
+</ul><hr><h2 id="2-2-数据类型"><a href="#2-2-数据类型" class="headerlink" title="2.2 数据类型"></a>2.2 数据类型</h2><p>标量、向量、矩阵、数组、数据框和列表。</p><a id="more"></a>
+
 
 
 
 <hr>
-<h3 id="2-2-1-向量"><a href="#2-2-1-向量" class="headerlink" title="2.2.1 向量"></a>2.2.1 向量</h3><p>向量是c()用于存储：<strong>数字型、字符型、逻辑型</strong>数据的一维数组。</p>
+<h3 id="2-2-1-向量"><a href="#2-2-1-向量" class="headerlink" title="2.2.1 向量"></a>2.2.1 向量</h3><ul>
+<li>向量是c()用于存储：<strong>数字型、字符型、逻辑型</strong>数据的一维数组。</li>
+</ul>
 <p><strong>创建向量 – <code>a &lt;- c( )</code></strong></p>
 <p><strong>创建标量 – <code>a &lt;- 常量</code></strong></p>
-<p><strong><em>单个向量中的数据类型必须一致！！</em></strong></p>
-<p>访问向量中单个元素: <code>a[ ]</code>;</p>
-<p>访问向量中多个元素:<code>a[c(  )]</code>;</p>
-<p>访问向量中从xx到xx的元素:<code>a[  :  ]</code></p>
+<ul>
+<li><p><strong>单个向量中的数据类型必须一致！！</strong></p>
+</li>
+<li><p>访问向量中单个元素: <code>a[ ]</code>;</p>
+</li>
+<li><p>访问向量中多个元素:<code>a[c(  )]</code>;</p>
+</li>
+<li><p>访问向量中从xx到xx的元素:<code>a[  :  ]</code></p>
+</li>
+</ul>
 <hr>
-<h3 id="2-2-2矩阵"><a href="#2-2-2矩阵" class="headerlink" title="2.2.2矩阵"></a>2.2.2矩阵</h3><ul>
+<h3 id="2-2-2-矩阵"><a href="#2-2-2-矩阵" class="headerlink" title="2.2.2 矩阵"></a>2.2.2 矩阵</h3><ul>
 <li>矩阵元素具有相同模式的二维数组</li>
 </ul>
 <p><strong>创建矩阵 –<code>y &lt;-matrix(vector,  nrow = , ncol = , byrow =  , dimnames = list( , ) )</code></strong></p>
-<p><code>vector</code>代表存储元素的对象，<code>nrow</code>代表行数量，<code>ncol</code>代表列数量。</p>
-<p><em>默认情况下<code>byrow = FALSE</code>(默认按列填充)，<code>byrow</code> = TRUE时矩阵元素按行填充。</em></p>
-<p><em><code>dimnames</code>用来给行和列的名称赋值（一般是字符型）。</em></p>
+<ul>
+<li><p><code>vector</code>代表存储元素的对象，<code>nrow</code>代表行数量，<code>ncol</code>代表列数量。</p>
+</li>
+<li><p>默认情况下<code>byrow = FALSE</code>(默认按列填充)，<code>byrow</code> = TRUE时矩阵元素按行填充。</p>
+</li>
+<li><p><code>dimnames</code>用来给行和列的名称赋值（一般是字符型）。</p>
+</li>
+</ul>
 <hr>
-<h3 id="2-2-3数组"><a href="#2-2-3数组" class="headerlink" title="2.2.3数组"></a>2.2.3数组</h3><p><strong><em>维度可以大于2</em></strong></p>
+<h3 id="2-2-3-数组"><a href="#2-2-3-数组" class="headerlink" title="2.2.3 数组"></a>2.2.3 数组</h3><ul>
+<li><strong>维度可以大于2</strong></li>
+</ul>
 
     </div>
 
@@ -299,7 +317,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2-数据集"><span class="nav-text">2.数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1数据集的概念"><span class="nav-text">2.1数据集的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2数据类型"><span class="nav-text">2.2数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-向量"><span class="nav-text">2.2.1 向量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2矩阵"><span class="nav-text">2.2.2矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3数组"><span class="nav-text">2.2.3数组</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2-数据集"><span class="nav-text">2. 数据集</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-数据集的概念"><span class="nav-text">2.1 数据集的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-数据类型"><span class="nav-text">2.2 数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-向量"><span class="nav-text">2.2.1 向量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-矩阵"><span class="nav-text">2.2.2 矩阵</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-3-数组"><span class="nav-text">2.2.3 数组</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -352,9 +370,6 @@
   </span>
   <span class="author" itemprop="copyrightHolder">zhang xuefeng</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
-  </div>
-  <span class="post-meta-divider">|</span>
   <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
   </div>
 
