@@ -58,7 +58,7 @@
 <meta property="og:site_name" content="ZXF_Bolg">
 <meta property="og:description" content="2.数据集2.1数据集的概念数据构成的矩形数组行表示：观测；列表示：变量2.2数据类型标量、向量、矩阵、数组、数据框和列表。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-08T10:12:51.751Z">
+<meta property="og:updated_time" content="2019-11-09T02:11:41.954Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/08/R-2/">
@@ -196,10 +196,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-11-08 17:51:42 / Modified: 18:12:51" itemprop="dateCreated datePublished" datetime="2019-11-08T17:51:42+08:00">2019-11-08</time>
+              <time title="Created: 2019-11-08 17:51:42" itemprop="dateCreated datePublished" datetime="2019-11-08T17:51:42+08:00">2019-11-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-09 10:11:41" itemprop="dateModified" datetime="2019-11-09T10:11:41+08:00">2019-11-09</time>
+              </span>
 
           
 
@@ -218,18 +224,20 @@
 
 <hr>
 <h3 id="2-2-1-向量"><a href="#2-2-1-向量" class="headerlink" title="2.2.1 向量"></a>2.2.1 向量</h3><p>向量是c()用于存储：<strong>数字型、字符型、逻辑型</strong>数据的一维数组。</p>
-<p><strong>创建向量 – a &lt;- c( )</strong></p>
-<p><strong>创建标量 – a &lt;- 常量</strong></p>
+<p><strong>创建向量 – <code>a &lt;- c( )</code></strong></p>
+<p><strong>创建标量 – <code>a &lt;- 常量</code></strong></p>
 <p><strong><em>单个向量中的数据类型必须一致！！</em></strong></p>
-<p>访问向量中单个元素: a[ ];</p>
-<p>访问向量中多个元素:a[c( )];</p>
-<p>访问向量中从xx到xx的元素:a[ : ]</p>
+<p>访问向量中单个元素: <code>a[ ]</code>;</p>
+<p>访问向量中多个元素:<code>a[c(  )]</code>;</p>
+<p>访问向量中从xx到xx的元素:<code>a[  :  ]</code></p>
 <hr>
-<h3 id="2-2-2矩阵"><a href="#2-2-2矩阵" class="headerlink" title="2.2.2矩阵"></a>2.2.2矩阵</h3><p>矩阵元素具有相同模式的二维数组</p>
-<p><strong>创建矩阵 – y &lt;-matrix(vector,  nrow = , ncol = , byrow =  , dimnames = list( , ) )</strong></p>
-<p>vector代表存储元素的对象，nrow代表行数量，ncol代表列数量。</p>
-<p><em>默认情况下byrow = FALSE(默认按列填充)，byrow = TRUE时矩阵元素按行填充。</em></p>
-<p><em>dimnames用来给行和列的名称赋值（一般是字符型）。</em></p>
+<h3 id="2-2-2矩阵"><a href="#2-2-2矩阵" class="headerlink" title="2.2.2矩阵"></a>2.2.2矩阵</h3><ul>
+<li>矩阵元素具有相同模式的二维数组</li>
+</ul>
+<p><strong>创建矩阵 –<code>y &lt;-matrix(vector,  nrow = , ncol = , byrow =  , dimnames = list( , ) )</code></strong></p>
+<p><code>vector</code>代表存储元素的对象，<code>nrow</code>代表行数量，<code>ncol</code>代表列数量。</p>
+<p><em>默认情况下<code>byrow = FALSE</code>(默认按列填充)，<code>byrow</code> = TRUE时矩阵元素按行填充。</em></p>
+<p><em><code>dimnames</code>用来给行和列的名称赋值（一般是字符型）。</em></p>
 <hr>
 <h3 id="2-2-3数组"><a href="#2-2-3数组" class="headerlink" title="2.2.3数组"></a>2.2.3数组</h3><p><strong><em>维度可以大于2</em></strong></p>
 
